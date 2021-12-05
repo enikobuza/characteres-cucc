@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your character</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="root">
+        <form id="characterForm">
+            <h3>Choose your character</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            
+            <label for="chooseGender">Gender:</label>
+            <select name="chooseGender" id="chooseGender">
+                <option value="choose">&#9660;</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select><br>
+
+            <label for="chooseRace">Race:</label>
+            <select name="chooseRace" id="chooseRace">
+                <option value="choose">&#9660;</option>
+                <option value="elf">Elf</option>
+                <option value="fairy">Fairy</option>
+                <option value="gnome">Gnome</option>
+            </select><br>
+
+            <label for="chooseClass">Class:</label>
+            <select name="ChooseClass" id="chooseClass">
+                <option value="choose">&#9660;</option>
+                <option value="barbarian">Barbarian</option>
+                <option value="monk">Monk</option>
+                <option value="wizard">Wizard</option>
+            </select><br>
+        </form>
+        <div class="characterSheet">
+            <div class="smallDisplay">
+                <div id="displayGender"></div>
+                <div id="displayClass"></div>
+            </div>    
+            <div id="displayRace"></div>
+        </div>
+    </div>
+</body>
+</html>
